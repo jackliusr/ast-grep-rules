@@ -1,6 +1,6 @@
 ruleDirs:
-- /home/jack/prjs/FhirEngine/ast/rules
+- /home/jack/prjs/ast-grep-rules/rules
 testConfigs:
-- testDir: /home/jack/prjs/FhirEngine/ast/rule-tests
+- testDir: /home/jack/prjs/ast-grep-rules/rule-tests
 utilDirs:
-- /home/jack/prjs/FhirEngine/ast/utils
+- /home/jack/prjs/ast-grep-rules/utils
