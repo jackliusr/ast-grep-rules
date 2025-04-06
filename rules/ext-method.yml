@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
+
+id: ext-method
+message: Add your rule message here....
+severity: error # error, warning, info, hint
+language: CSharp
+rule:
+  kind: identifier
+  precedes:
+    kind: parameter_list
+  inside:
+    kind: method_declaration
+    all:
+      - has: 
+          kind: parameter_list
+          has:
+            nthChild: 1
+            kind: parameter
+            has: 
+              kind: modifier
+              regex: this

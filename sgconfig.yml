@@ -1,0 +1,6 @@
+ruleDirs:
+- /home/jack/prjs/FhirEngine/ast/rules
+testConfigs:
+- testDir: /home/jack/prjs/FhirEngine/ast/rule-tests
+utilDirs:
+- /home/jack/prjs/FhirEngine/ast/utils
