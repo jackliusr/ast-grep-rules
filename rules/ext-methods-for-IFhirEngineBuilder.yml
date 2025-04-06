@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
 
-id: ext-method
+id: ext-methods-for-IFhirEngineBuilder
 message: Add your rule message here....
 severity: error # error, warning, info, hint
 language: CSharp
@@ -16,7 +16,11 @@ rule:
           has:
             nthChild: 1
             kind: parameter
-            has: 
-              kind: modifier
-              regex: this
- 
+            all: 
+              - has:
+                  kind: modifier
+                  regex: this
+              - has:
+                  kind: identifier
+                  field: type
+                  regex: IFhirEngineBuilder       
