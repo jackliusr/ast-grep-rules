@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
 
 id: ext-method
-message: Add your rule message here....
-severity: error # error, warning, info, hint
+message: extension methods
+severity: info # error, warning, info, hint
 language: CSharp
 rule:
   kind: identifier
