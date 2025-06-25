@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
+
+id: amt-pm-method
+message: PM methods
+severity: info # error, warning, info, hint
+language: Java
+rule:
+  kind: identifier
+  precedes:
+    kind: formal_parameters
+  inside:
+    kind: method_declaration
+    all:
+      - has:
+          kind: formal_parameters
+          has:
+            nthChild: 1
+            kind: formal_parameter
+            has:
+              kind: type_identifier
+              regex: SectionPm
